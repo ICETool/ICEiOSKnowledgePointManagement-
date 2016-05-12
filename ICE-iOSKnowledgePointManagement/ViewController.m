@@ -16,8 +16,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    
+    
+    
+    
+    
+    
+    
 }
+
+- (IBAction)sendNotifaction:(UIButton *)sender {
+    
+    NSNotification *notifaction = [NSNotification notificationWithName:@"测试通知" object:self];
+    [[NSNotificationCenter defaultCenter] postNotification:notifaction];
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

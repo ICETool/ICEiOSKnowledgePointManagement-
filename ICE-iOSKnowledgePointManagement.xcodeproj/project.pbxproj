@@ -13,6 +13,9 @@
 		1767A70A1CE414B9003F08A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1767A7081CE414B9003F08A6 /* Main.storyboard */; };
 		1767A70C1CE414B9003F08A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1767A70B1CE414B9003F08A6 /* Assets.xcassets */; };
 		1767A70F1CE414B9003F08A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1767A70D1CE414B9003F08A6 /* LaunchScreen.storyboard */; };
+		1767A7171CE416BE003F08A6 /* 文本内容.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1767A7161CE416BE003F08A6 /* 文本内容.strings */; };
+		1767A71A1CE417EC003F08A6 /* SendNotifactoinView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1767A7191CE417EC003F08A6 /* SendNotifactoinView.m */; };
+		1767A71D1CE417FB003F08A6 /* ReceiveNotifactionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1767A71C1CE417FB003F08A6 /* ReceiveNotifactionView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,11 @@
 		1767A70B1CE414B9003F08A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1767A70E1CE414B9003F08A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1767A7101CE414B9003F08A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1767A7161CE416BE003F08A6 /* 文本内容.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = "文本内容.strings"; sourceTree = "<group>"; };
+		1767A7181CE417EC003F08A6 /* SendNotifactoinView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendNotifactoinView.h; sourceTree = "<group>"; };
+		1767A7191CE417EC003F08A6 /* SendNotifactoinView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendNotifactoinView.m; sourceTree = "<group>"; };
+		1767A71B1CE417FB003F08A6 /* ReceiveNotifactionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReceiveNotifactionView.h; sourceTree = "<group>"; };
+		1767A71C1CE417FB003F08A6 /* ReceiveNotifactionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReceiveNotifactionView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +66,15 @@
 		1767A6FE1CE414B9003F08A6 /* ICE-iOSKnowledgePointManagement */ = {
 			isa = PBXGroup;
 			children = (
+				1767A7161CE416BE003F08A6 /* 文本内容.strings */,
 				1767A7021CE414B9003F08A6 /* AppDelegate.h */,
 				1767A7031CE414B9003F08A6 /* AppDelegate.m */,
 				1767A7051CE414B9003F08A6 /* ViewController.h */,
 				1767A7061CE414B9003F08A6 /* ViewController.m */,
+				1767A7181CE417EC003F08A6 /* SendNotifactoinView.h */,
+				1767A7191CE417EC003F08A6 /* SendNotifactoinView.m */,
+				1767A71B1CE417FB003F08A6 /* ReceiveNotifactionView.h */,
+				1767A71C1CE417FB003F08A6 /* ReceiveNotifactionView.m */,
 				1767A7081CE414B9003F08A6 /* Main.storyboard */,
 				1767A70B1CE414B9003F08A6 /* Assets.xcassets */,
 				1767A70D1CE414B9003F08A6 /* LaunchScreen.storyboard */,
@@ -137,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1767A70F1CE414B9003F08A6 /* LaunchScreen.storyboard in Resources */,
+				1767A7171CE416BE003F08A6 /* 文本内容.strings in Resources */,
 				1767A70C1CE414B9003F08A6 /* Assets.xcassets in Resources */,
 				1767A70A1CE414B9003F08A6 /* Main.storyboard in Resources */,
 			);
@@ -150,8 +164,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1767A7071CE414B9003F08A6 /* ViewController.m in Sources */,
+				1767A71D1CE417FB003F08A6 /* ReceiveNotifactionView.m in Sources */,
 				1767A7041CE414B9003F08A6 /* AppDelegate.m in Sources */,
 				1767A7011CE414B9003F08A6 /* main.m in Sources */,
+				1767A71A1CE417EC003F08A6 /* SendNotifactoinView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +282,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "ICE-iOSKnowledgePointManagement/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ICE.ICE-iOSKnowledgePointManagement";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -277,6 +294,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "ICE-iOSKnowledgePointManagement/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ICE.ICE-iOSKnowledgePointManagement";
 				PRODUCT_NAME = "$(TARGET_NAME)";
